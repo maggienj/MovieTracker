@@ -22,6 +22,7 @@ public class ImageTextListViewActivity extends Activity implements AdapterView.O
     String[] movieWhen;
     String[] movieWhere;
 
+
     // List<HashMap<String, String>> fillMaps = new ArrayList<HashMap<String, String>>();
     /**
      * Called when the activity is first created.
@@ -30,6 +31,7 @@ public class ImageTextListViewActivity extends Activity implements AdapterView.O
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.image_list_activity);
+
 
         movieName = getResources().getStringArray(R.array.movieName);
         movieWhen = getResources().getStringArray(R.array.movieWhen);

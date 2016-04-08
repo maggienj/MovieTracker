@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
@@ -417,7 +420,6 @@
         android:id="@+id/tableLayoutSMS"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_below="@+id/tableLayout4"
         android:layout_marginRight="60dp"
         android:paddingLeft="10dp"
@@ -490,48 +492,44 @@
 
             <EditText
                 android:id="@+id/editTextPhoneNo"
-                android:layout_width="@dimen/activity_horizontal_margin"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Hello, type phone number here"
                 android:textColor="#000000"
                 android:textSize="15sp" />
+
         </TableRow>
     </TableLayout>
 
-    <ImageView
-        android:id="@+id/smsIcon"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:contentDescription="@string/image"
-        android:onClick="onSMSClick"
+    <TableLayout
+        android:id="@+id/tableLayoutSocial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tableLayoutSMS"
         android:paddingLeft="10dp"
-        android:paddingRight="10dp"
-        android:src="@drawable/sms" />
+        android:paddingTop="20dp">
 
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"></TableRow>
 
-    <!-- the following set of imageViews are for social networking icons -->
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
     <ImageView
         android:id="@+id/reddit_icon"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_above="@id/smsIcon"
-        android:layout_alignParentRight="true"
         android:contentDescription="@string/image"
-        android:paddingLeft="10dp"
         android:paddingRight="10dp"
         android:src="@drawable/reddit1" />
-
 
     <ImageView
         android:id="@+id/tweet_icon"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_above="@id/reddit_icon"
-        android:layout_alignParentRight="true"
         android:contentDescription="@string/image"
-        android:paddingLeft="10dp"
         android:paddingRight="10dp"
         android:src="@drawable/twt1" />
 
@@ -539,10 +537,7 @@
         android:id="@+id/fb_icon"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_above="@id/tweet_icon"
-        android:layout_alignParentRight="true"
         android:contentDescription="@string/image"
-        android:paddingLeft="10dp"
         android:paddingRight="10dp"
         android:src="@drawable/fb1" />
 
@@ -550,10 +545,7 @@
         android:id="@+id/whatsapp_icon"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_above="@id/fb_icon"
-        android:layout_alignParentRight="true"
         android:contentDescription="@string/image"
-        android:paddingLeft="10dp"
         android:paddingRight="10dp"
         android:src="@drawable/whatsapp_icon" />
 
@@ -561,22 +553,28 @@
         android:id="@+id/gplus_icon"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_above="@id/whatsapp_icon"
-        android:layout_alignParentRight="true"
         android:contentDescription="@string/image"
-        android:paddingLeft="10dp"
         android:paddingRight="10dp"
         android:src="@drawable/gplus2" />
 
-    <ImageView
+
+            <ImageView
         android:id="@+id/email_icon"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_above="@id/gplus_icon"
-        android:layout_alignParentRight="true"
         android:contentDescription="@string/image"
-        android:paddingLeft="10dp"
         android:paddingRight="10dp"
         android:src="@drawable/email2" />
 
+            <ImageView
+                android:id="@+id/smsIcon"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:contentDescription="@string/image"
+                android:onClick="onSMSClick"
+                android:paddingRight="10dp"
+                android:src="@drawable/sms" />
+        </TableRow>
+    </TableLayout>
 </RelativeLayout>
+</ScrollView>

@@ -5,7 +5,7 @@
     android:background="@drawable/list_selector"
     android:descendantFocusability="blocksDescendants"
     android:orientation="horizontal"
-    android:padding="5dip">
+    android:padding="5dp">
 
 
     <!-- ListRow Left side Thumbnail image -->
@@ -14,42 +14,35 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_marginRight="5dip"
+        android:layout_marginRight="1dp"
         android:descendantFocusability="blocksDescendants"
-        android:padding="3dip">
+        android:padding="3dp">
 
     <ImageView
         android:id="@+id/icon"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:contentDescription="@string/image"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp" />
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp"
+        android:src="@drawable/proposal" />
 
     </LinearLayout>
-    <!-- Rightend Arrow -->
-    <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_centerVertical="true"
-        android:contentDescription="@string/app_name"
-        android:src="@drawable/arrow" />
+
     <!-- City-->
     <TextView
         android:id="@+id/movieName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="35dip"
+        android:layout_marginLeft="1dp"
         android:layout_toRightOf="@+id/thumbnail"
-        android:paddingBottom="10dip"
+        android:paddingBottom="5dp"
         android:text=""
         android:textColor="#040404"
-        android:textSize="25dip"
+        android:textSize="25sp"
         android:textStyle="bold"
         android:typeface="sans" />
-    <!-- Weather Information-->
+    <!-- movieName Information-->
     <TextView
         android:id="@+id/movieWhen"
         android:layout_width="wrap_content"
@@ -57,10 +50,10 @@
         android:layout_alignLeft="@+id/movieName"
         android:layout_below="@+id/movieName"
         android:layout_toRightOf="@+id/thumbnail"
-        android:paddingTop="5dip"
+        android:paddingTop="5dp"
         android:text=""
         android:textColor="#343434"
-        android:textSize="25dip" />
+        android:textSize="25sp" />
 
     <TextView
         android:id="@+id/movieWhere"
@@ -70,10 +63,20 @@
         android:layout_below="@+id/movieWhen"
         android:layout_centerHorizontal="true"
         android:layout_toRightOf="@+id/thumbnail"
-        android:paddingTop="5dip"
+        android:paddingTop="5dp"
         android:text=""
         android:textColor="#343434"
-        android:textSize="25dip" />
+        android:textSize="25sp" />
+
+    <!-- Rightend Arrow -->
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/arrow" />
 
 </RelativeLayout>
 
